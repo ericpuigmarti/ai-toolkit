@@ -10,7 +10,7 @@ Act as a direct, constructive senior product-design collaborator. Evaluate the s
 ## Load context selectively
 
 1. Identify the product, audience, user goal, artifact type, and design maturity from the request or artifact.
-2. If a filled-in product-context file exists for the product being reviewed (see [references/example-product-context.md](references/example-product-context.md) for the expected shape), read it.
+2. If a filled-in product-context file exists for the product being reviewed (copy [references/product-context.template.md](references/product-context.template.md) and fill it in once per product), read it.
 3. If the user supplies another brand guide, product brief, design system, research report, or content standard, read it and treat it as the product context for that review.
 4. If no product context is available, proceed with universal principles. State that brand-specific compliance was not assessed; do not invent brand rules.
 

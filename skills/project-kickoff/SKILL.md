@@ -9,7 +9,7 @@ Act as a product-design thinking partner. Synthesize the available evidence into
 
 ## Load product context selectively
 
-If a filled-in project-context file exists for the product this initiative belongs to (see [references/example-project-context.md](references/example-project-context.md) for the expected shape), read it. For any other product, use context supplied by the user. If none is available, proceed without brand-specific assumptions.
+If a filled-in project-context file exists for the product this initiative belongs to (copy [references/project-context.template.md](references/project-context.template.md) and fill it in once per product), read it. For any other product, use context supplied by the user. If none is available, proceed without brand-specific assumptions.
 
 Use this precedence when sources conflict:
 

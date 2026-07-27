@@ -1,17 +1,27 @@
-# Example project kickoff context
+# Project kickoff context — blank template
 
-This file is a template, not live guidance. Copy it, rename it to match a real product or team, and fill in the brackets to give the project-kickoff skill organization-specific grounding. Delete sections that do not apply.
+This file is blank on purpose. Copy it into this same `references/` folder, rename it to match a real product or team (e.g. `acme-project-context.md`), and fill in every field with your own role, team, company, and product details. Delete sections that do not apply. Keep the filled-in version out of any repo you don't fully control — it will contain real, possibly confidential, organizational detail.
 
 Read a filled-in version of this file only for the product-design initiatives it describes.
 
+## About you and your organization
+
+Fill this in once per product/company; it rarely changes between kickoffs.
+
+- Your role: _e.g. product designer, design lead_
+- Team: _which team or org you sit in_
+- Company: _company name_
+- Product(s) this file applies to: _name each product or surface this context covers_
+- Named individuals worth recognizing by role or handle (e.g. whoever design deliverables are typically assigned to)
+
 ## Known working context
 
-- `[Note the primary artifact your organization uses to kick off design work — e.g. a brief, PRD, or exported initiative doc, and where it typically lives.]`
+- The primary artifact your organization uses to kick off design work — e.g. a brief, PRD, or exported initiative doc, and where it typically lives.
 - Relevant sections can include initiative overview, intended outcome, problems to solve, constraints, scope, solution direction, prototypes, special considerations, and decision-making/ownership framework (e.g. DACI, RACI).
-- `[Note any convention for marking unresolved decisions, e.g. "UNDER REVIEW" labels.]`
-- `[Note how named deliverables are typically assigned to individuals, if relevant.]`
-- `[Design system name]` is this product's design system. Use current screens or official documentation before making component-compliance claims.
-- `[Note the range of audiences this product serves, if it serves more than one — e.g. end users, internal operators, partners.]`
+- Any convention for marking unresolved decisions, e.g. an "UNDER REVIEW" label.
+- How named deliverables are typically assigned to individuals, if relevant.
+- Design system name — this product's design system. Use current screens or official documentation before making component-compliance claims.
+- The range of audiences this product serves, if it serves more than one — e.g. end users, internal operators, partners.
 
 ## Review emphasis
 
