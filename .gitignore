@@ -9,3 +9,7 @@ skills/design-crit/references/*-context.md
 !skills/design-crit/references/product-context.template.md
 skills/project-kickoff/references/*-context.md
 !skills/project-kickoff/references/project-context.template.md
+
+# Filled-in personas — real audience details, kept local only.
+agents/persona-reviewer/personas/*
+!agents/persona-reviewer/personas/README.md

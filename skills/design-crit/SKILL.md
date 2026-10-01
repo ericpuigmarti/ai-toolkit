@@ -136,7 +136,7 @@ A reviewer that saw how a design was made tends to grade what was intended rathe
  
 1. Confirm the audience, core tasks, design stage, and platform. Ask once if they are unclear; otherwise state assumptions.
 2. Build one evidence pack that every reviewer receives: screenshots saved as files (for a Figma link, one export per screen or state in scope), a transcript of the on-screen text when images are low resolution, and a short context note. Leave out who designed it, any rationale from the conversation, and any earlier critique or score. If the assistant built or edited the design earlier in the conversation, say so and be especially strict.
-3. Run the four reviewers in parallel as separate subagents, so each starts fresh. Give each one the evidence pack, its lens brief, any panel lessons for its lens, the relevant context files, and the output format. Reviewers are read-only. If subagents are unavailable, run the lenses one after another and tell the user the review was not truly blind.
+3. Run the four lens reviewers in parallel as separate subagents, so each starts fresh. If the user supplies a persona file, or one exists in `agents/persona-reviewer/personas/`, run the optional persona reviewer alongside them (see lens 5). Give each one the evidence pack, its lens brief, any panel lessons for its lens, the relevant context files, and the output format. Reviewers are read-only. If subagents are unavailable, run the lenses one after another and tell the user the review was not truly blind.
 4. Merge the reports into one critique.
 5. If an issue repeats something the panel or team keeps missing, offer to add it to the panel lessons. Add nothing without the user's agreement.
 ### Reviewer rules
@@ -156,6 +156,7 @@ Include these in every reviewer's prompt:
 2. **UX and accessibility.** Whether the audience can finish the core task with the least friction: flow order, decision points, empty, loading, error, in-progress and success states, recovery, and what is missing. Cover visible accessibility risks such as contrast, target size, labels, focus order, and color-only meaning, and recommend a standards-based audit for anything that cannot be confirmed visually.
 3. **Copy and content.** If a UX writing skill is installed (for example `ux-writing`), load it and follow its workflow: context first, then each string through its editing phases, patterns, accessibility guidance, and benchmarks, tagging each issue with the phase or pattern it breaks. Supplied content guidelines override general defaults. Check plain language, consistent terms across screens, and decision-changing facts hidden in footnotes. Give replacement copy for every fix.
 4. **Opportunity.** Does not deduct points. Returns one to three proposals, each a stronger pattern, a flow improvement, or a design-system gap the screens had to work around, with what it replaces, why it is better for this audience, risks, and confidence. Scores "headroom" out of 10, which is not counted in the overall score.
+5. **Persona (optional).** Run only when a persona file is supplied or available. Use the `persona-reviewer` agent (`agents/persona-reviewer/AGENT.md`) with one persona per reviewer, each starting fresh. It receives the artifact, the persona file, and the scenario, and nothing else: no design rationale, no other reviewers' notes. It reports fit for that person (intent path, dimension scores, one fix first), not design quality. If the agent is not installed, skip this lens and say so; do not improvise a persona.
 ### Merging
  
 Deliver the standard critique format with these additions:
@@ -165,6 +166,7 @@ Deliver the standard critique format with these additions:
 - Keep disagreements visible, and say which view you would act on and why.
 - Drop low-confidence issues that no other reviewer supports unless they are critical; list them briefly under "Unconfirmed".
 - Add a panel table (reviewer, score, top issue, disagreements) and a "Worth exploring" section with the opportunity proposals.
+- Show persona results as their own row or rows in the panel table, with the persona's verdict and intent path. Do not average persona scores into the expert overall score, because they measure fit for one person, not craft. Where a persona's experience contradicts an expert finding, keep the disagreement visible.
 ### Panel lessons
  
 Keep a short list (15 at most) of repeat misses for reviewers to check every time, each tagged with its lens, in the form `[lens] What to check and what good looks like`. Store it in a filled-in product-context file so it stays out of version control.
