@@ -13,3 +13,7 @@ skills/project-kickoff/references/*-context.md
 # Filled-in personas — real audience details, kept local only.
 agents/persona-reviewer/personas/*
 !agents/persona-reviewer/personas/README.md
+
+# ux-writing local-only files: bundled zip and nested worktrees
+skills/ux-writing.zip
+skills/ux-writing/.claude/
