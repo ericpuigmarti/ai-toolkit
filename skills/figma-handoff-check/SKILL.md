@@ -1,6 +1,3 @@
-
-
-
 ---
 name: figma-handoff-check
 description: Check a Figma design file before it goes to engineering. Flags misleading or duplicate screen names, default layer names, hardcoded or primitive tokens, off-system text styles, detached and local components, and missing responsive variants, then writes a short change summary for devs. Use when someone asks for a handoff check, asks whether a file is ready for dev, wants a Figma file cleaned up, or shares a Figma link before handoff. Report-only; it never edits the file.

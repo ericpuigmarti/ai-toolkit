@@ -1,8 +1,5 @@
-
-
-
 ---
-name: design-critique
+name: design-crit
 description: Critique UI and UX designs using product-neutral usability, hierarchy, content, accessibility, consistency, and interaction principles. Use when reviewing screenshots, Figma designs, prototypes, flows, components, or written design descriptions; when someone asks for design feedback, a UX audit, visual critique, iteration priorities, annotated issues, or a blind panel review with independent reviewers; or when evaluating spacing, hierarchy, copy, component use, and design-system consistency. Apply a brand or product reference only when the user supplies one or the reviewed product matches an included context file.
 ---
  
