@@ -5,7 +5,19 @@ agents/product-content-reviewer/
 
 # Filled-in personal/company context files copied from *.template.md —
 # these will contain real org details and should stay local only.
-skills/design-critique/references/*-context.md
-!skills/design-critique/references/product-context.template.md
+skills/design-crit/references/*-context.md
+!skills/design-crit/references/product-context.template.md
 skills/project-kickoff/references/*-context.md
 !skills/project-kickoff/references/project-context.template.md
+
+# Filled-in personas — real audience details, kept local only.
+agents/persona-reviewer/personas/*
+!agents/persona-reviewer/personas/README.md
+
+# ux-writing local-only files: bundled zip and nested worktrees
+skills/ux-writing.zip
+skills/ux-writing/.claude/
+
+# Filled-in shared design system context — real org details, kept local only.
+context/*-context.md
+!context/*.template.md

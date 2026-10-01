@@ -15,7 +15,7 @@ This is currently a personal toolkit, but suggestions and improvements are welco
 Use lowercase, descriptive, hyphen-separated names:
 
 ```text
-design-critique
+design-crit
 research-synthesis
 concept-to-prototype
 ```

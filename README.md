@@ -29,7 +29,7 @@ Before publishing an item, make sure it includes:
 ## Adding something new
 
 1. Start with the closest file in [`templates/`](templates/).
-2. Create a descriptive, lowercase folder using hyphens, such as `design-critique`.
+2. Create a descriptive, lowercase folder using hyphens, such as `design-crit`.
 3. Add a small example with any sensitive information removed.
 4. Record meaningful changes in [`CHANGELOG.md`](CHANGELOG.md).
 
