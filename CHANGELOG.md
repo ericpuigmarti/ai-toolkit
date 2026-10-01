@@ -13,3 +13,4 @@ Notable additions and improvements are recorded here.
 - `design-crit` usability heuristics reference and Mobbin pattern lookup
 - Narrowed `design-crit` description to avoid triggering alongside the Maple `design-critique` skill
 - Shared `context/` folder with a blank design-system context template; `figma-handoff-check` and `design-crit` read it first
+- `ask-leadership` skill — AAA (Altitude, Audience, Action) framework for structuring communication with execs and senior leaders
