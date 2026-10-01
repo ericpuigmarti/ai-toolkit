@@ -12,3 +12,4 @@ Notable additions and improvements are recorded here.
 - Optional persona lens in `design-crit` blind panel mode
 - `design-crit` usability heuristics reference and Mobbin pattern lookup
 - Narrowed `design-crit` description to avoid triggering alongside the Maple `design-critique` skill
+- Shared `context/` folder with a blank design-system context template; `figma-handoff-check` and `design-crit` read it first

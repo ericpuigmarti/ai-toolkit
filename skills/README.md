@@ -23,3 +23,7 @@ Copy [`../templates/SKILL.template.md`](../templates/SKILL.template.md) to begin
 - `design-critique`: the team-standard scored Maple/Polaris review.
 
 If you want only one to fire, disable the other in your Claude skill settings. Do not edit the team skill.
+
+## Shared context
+
+Facts about a design system (tokens, breakpoints, naming) live in the repo's `context/` folder, not inside each skill. Copy [`../context/design-system-context.template.md`](../context/design-system-context.template.md) to `context/<name>-context.md` and fill it in. Filled files are gitignored. `figma-handoff-check` and `design-crit` read it first.

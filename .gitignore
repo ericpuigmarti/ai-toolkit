@@ -17,3 +17,7 @@ agents/persona-reviewer/personas/*
 # ux-writing local-only files: bundled zip and nested worktrees
 skills/ux-writing.zip
 skills/ux-writing/.claude/
+
+# Filled-in shared design system context — real org details, kept local only.
+context/*-context.md
+!context/*.template.md

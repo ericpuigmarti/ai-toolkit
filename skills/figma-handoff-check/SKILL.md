@@ -11,7 +11,7 @@ Checks a Figma file, or one page or section of it, before it goes to engineering
  
 ## Load design system context
  
-If a filled-in design-system context file exists for the product (copy [references/design-system-context.template.md](references/design-system-context.template.md) and fill it in once per product), read it first. It holds the answers this skill would otherwise ask for: platforms, breakpoints, which token collections are semantic or primitive, the spacing source of truth, and the screen naming pattern.
+If a filled-in design-system context file exists, read it first. Look in the repo's shared `context/` folder (for example `context/polaris-context.md`, made from `context/design-system-context.template.md`), then in this skill's own `references/` folder (copy [references/design-system-context.template.md](references/design-system-context.template.md) and fill it in once per product). The shared file wins if both exist. It holds the answers this skill would otherwise ask for: platforms, breakpoints, which token collections are semantic or primitive, the spacing source of truth, and the screen naming pattern.
  
 When the user answers one of those questions during a run, suggest adding the answer to the context file so it isn't asked again.
  
