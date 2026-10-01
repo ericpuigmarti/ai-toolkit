@@ -6,7 +6,7 @@ Give each skill its own folder:
 
 ```text
 skills/
-└── design-critique/
+└── design-crit/
     ├── SKILL.md
     ├── examples/
     └── references/

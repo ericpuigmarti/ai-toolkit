@@ -5,7 +5,7 @@ agents/product-content-reviewer/
 
 # Filled-in personal/company context files copied from *.template.md —
 # these will contain real org details and should stay local only.
-skills/design-critique/references/*-context.md
-!skills/design-critique/references/product-context.template.md
+skills/design-crit/references/*-context.md
+!skills/design-crit/references/product-context.template.md
 skills/project-kickoff/references/*-context.md
 !skills/project-kickoff/references/project-context.template.md
