@@ -1,6 +1,6 @@
 ---
 name: design-crit
-description: Critique UI and UX designs using product-neutral usability, hierarchy, content, accessibility, consistency, and interaction principles. Use when reviewing screenshots, Figma designs, prototypes, flows, components, or written design descriptions; when someone asks for design feedback, a UX audit, visual critique, iteration priorities, annotated issues, or a blind panel review with independent reviewers; or when evaluating spacing, hierarchy, copy, component use, and design-system consistency. Apply a brand or product reference only when the user supplies one or the reviewed product matches an included context file.
+description: Critique UI and UX designs against product-neutral usability, hierarchy, content, accessibility, consistency, and interaction principles, with unscored findings by default. Use for a structured critique of screenshots, Figma designs, prototypes, flows, or components; for a blind panel review with independent reviewers or a persona review; or for annotated visual audits tagged to usability heuristics. Applies a brand or product reference only when the user supplies one or a filled-in product-context file exists. Not the Maple team's scored review (use design-critique for that).
 ---
  
 # Design critique
@@ -120,7 +120,7 @@ Use visual audit mode when the user asks to annotate, mark up, highlight, or loc
  
 1. Confirm or infer the audience and core task; state assumptions.
 2. Determine the image's actual pixel dimensions before calculating coordinates.
-3. Identify issues using the same evidence and severity rules as the standard critique.
+3. Identify issues against [references/usability-heuristics.md](references/usability-heuristics.md), judged against the audience and core task, using the same evidence and severity rules as the standard critique. Tag each issue with the heuristic it breaks.
 4. Draft a numbered issue list before producing a marked-up artifact when the report is intended for a wider team or the findings are judgment-heavy.
 5. For each confirmed issue, define a tight bounding box using percentages of the original image: `x`, `y`, `width`, and `height` from 0–100.
 6. Create the requested annotated image or self-contained HTML report using the available image or document tools.
@@ -176,10 +176,13 @@ Keep a short list (15 at most) of repeat misses for reviewers to check every tim
  
 Use external examples only when they sharpen a recommendation for a flow or interaction pattern such as onboarding, forms, empty states, navigation, progress, status, or error recovery.
  
-- Search only when tools are available and the user would benefit from current examples.
-- Use one or two relevant examples rather than a broad inspiration dump.
-- Describe the transferable pattern in original language.
-- Do not reproduce proprietary screenshots or treat popularity as evidence that a pattern is appropriate.
+- Search only when tools are available and the user would benefit from current examples. Skip it for spacing, visual, and copy issues, where a reference adds nothing.
+- If Mobbin tools are available (search for "mobbin" with ToolSearch if they are not loaded), use them. If nothing loads, skip this step without blocking the critique and add no pattern references for that run.
+- Search with a specific pattern name plus product category, such as "empty state healthcare app" or "multi-step form progress indicator", not a pasted description of the issue.
+- Use one or two relevant examples per issue rather than a broad inspiration dump.
+- Describe the transferable pattern in original language and name the product, for example "Headspace uses a persistent progress bar with step labels during onboarding". Do not embed or reproduce screenshots, and do not closely paraphrase captions the tool returns.
+- Do not treat popularity as evidence that a pattern is appropriate.
+- Fold the reference into the issue's recommendation so it reads as part of the fix, not a separate citation list. Drop it if the reviewer does not want it.
 - Keep the recommendation grounded in the reviewed product's audience and task.
 ## Boundaries
  
