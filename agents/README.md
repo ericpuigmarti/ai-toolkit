@@ -9,4 +9,4 @@ Keep agents narrow enough to evaluate. If an agent tries to research, design, wr
 
 ## Available
 
-- [`persona-reviewer`](persona-reviewer/AGENT.md): reviews a design as one specific user from a persona file. Pair with the `design-crit` skill.
+- [`persona-reviewer`](persona-reviewer/README.md): reviews a design as one specific user from a persona file. Pair with the `design-crit` skill.
