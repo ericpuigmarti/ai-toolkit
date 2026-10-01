@@ -35,7 +35,8 @@ Do not judge an early concept as though it were production-ready.
 ## Inspect the available evidence
  
 - Screenshot or image: inspect layout, hierarchy, grouping, density, copy, controls, states, and visible accessibility concerns.
-- Figma or structured design file: inspect frames, components, variants, tokens, text, spacing, and prototype connections when tools and permissions allow.
+- Figma link (figma.com/design, /file, /proto or /make URL): treat the link as the artifact and inspect the file itself instead of asking for screenshots. Load `figma:figma-use` before any `use_figma` call. Use the read-only Figma MCP tools (`get_metadata`, `get_screenshot`, `get_design_context`, `get_variable_defs`) for structure, visuals, and tokens. Inspect frames, components, variants, tokens, text, spacing, and prototype connections. If Figma access is unavailable, say so and ask for exported screenshots.
+- Other structured design file: inspect the same details when tools and permissions allow.
 - Prototype or flow: inspect entry points, sequence, feedback, recovery, completion, and transitions between states.
 - Written description: separate observations from assumptions and name what visual or behavioral evidence would confirm them.
 Never claim to have inspected hidden states, source structure, tokens, contrast values, or interactions that are not available.
@@ -135,7 +136,7 @@ A reviewer that saw how a design was made tends to grade what was intended rathe
 ### Workflow
  
 1. Confirm the audience, core tasks, design stage, and platform. Ask once if they are unclear; otherwise state assumptions.
-2. Build one evidence pack that every reviewer receives: screenshots saved as files (for a Figma link, one export per screen or state in scope), a transcript of the on-screen text when images are low resolution, and a short context note. Leave out who designed it, any rationale from the conversation, and any earlier critique or score. If the assistant built or edited the design earlier in the conversation, say so and be especially strict.
+2. Build one evidence pack that every reviewer receives: screenshots saved as files (for a Figma link, one `get_screenshot` export per screen or state in scope), a transcript of the on-screen text when images are low resolution, and a short context note. Leave out who designed it, any rationale from the conversation, and any earlier critique or score. If the assistant built or edited the design earlier in the conversation, say so and be especially strict.
 3. Run the four lens reviewers in parallel as separate subagents, so each starts fresh. If the user supplies a persona file, or one exists in `agents/persona-reviewer/personas/`, run the optional persona reviewer alongside them (see lens 5). Give each one the evidence pack, its lens brief, any panel lessons for its lens, the relevant context files, and the output format. Reviewers are read-only. If subagents are unavailable, run the lenses one after another and tell the user the review was not truly blind.
 4. Merge the reports into one critique.
 5. If an issue repeats something the panel or team keeps missing, offer to add it to the panel lessons. Add nothing without the user's agreement.
