@@ -29,6 +29,24 @@ Check terminology and mechanics first (objective, rule-based) before voice/tone 
 
 Strings with no issues don't need a line — silence on a screen/file means it passed.
 
+## Writing new copy
+
+When asked to write copy rather than review it, get these four things first. If the request already answers them, don't re-ask — just proceed. If one is missing and it would change the copy, ask.
+
+- **Where it lives** — screen, flow, or component, and the UI element (button, toast, empty state, etc.)
+- **User state** — what they're trying to do and how they're likely feeling (see Tone by context)
+- **Audience and tier** — patient-facing or provider-facing; low-tier functional or higher-tier relationship-building (see Point of view by tier)
+- **Constraints** — character limits, fixed-width layouts, platform guidelines, and whether the string is going into FR
+
+Then deliver in this shape:
+
+- **Recommended** — the string, written to the rules above
+- **Alternatives** — two or three, each with a one-line "best for" (e.g. tighter for a narrow button, warmer for a higher-tier touchpoint). Only offer alternatives that genuinely differ; don't pad to three.
+- **Rationale** — one or two lines on why the recommendation fits the user state and surface
+- **Localization notes** — only when relevant: idioms to avoid, strings likely to expand in FR, anything a translator needs to know. Skip the section if there's nothing to say.
+
+Check terminology and mechanics on every option before presenting it, not just the recommended one.
+
 ## Voice
 
 Maple's brand voice is **"You got this"** — upbeat, confident, and clear, without ever tipping into hype or corporate-speak.
